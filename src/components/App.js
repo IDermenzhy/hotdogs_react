@@ -17,7 +17,7 @@ class App extends Component {
         // console.log(this.props, 'render');
       return (
       <div className="App">
-          <div className="black-line" />
+          <div className="black-line"></div>
           <Header/>
           <Nav/>
           <Main items = {this.props.items}/>

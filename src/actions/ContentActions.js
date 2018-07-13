@@ -9,7 +9,7 @@ export function itemsFetchDataSuccess(items) {
 }
 
 export function itemsFetchData() {
-    return dispatch => {
+    return (dispatch) => {
         axios.get('https://formula-test-api.herokuapp.com/menu')
             .then((response) => dispatch(itemsFetchDataSuccess(response.data)))
             .catch(err => console.log(err));
