@@ -1,0 +1,84 @@
+.contact-container {
+    background-color: rgba(128, 128, 128, 0.15);
+    margin: 10px 0 ;
+    width: 40%;
+    height: 420px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    padding-top: 20px;
+}
+.input-area {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+}
+
+input[type = 'username'], input[type = 'email'], textarea {
+    justify-content: center;
+    border: 1px solid #d9d9d9;
+    width: 300px;
+    font: 400 14px Arial;
+    margin-bottom: 25px;
+    border-radius: 4px;
+    padding-left: 10px;
+}
+input[type = 'username'], input[type = 'email'] {
+    height: 50px;
+    padding-left: 40px;
+}
+textarea{
+    height: 100px;
+    width: 330px;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+input[type = 'username']:hover,
+input[type = 'email']:hover,
+textarea:hover {
+    box-shadow: 0 0 6px 3px rgba(128, 128, 128, 0.9);
+}
+
+.submit {
+    text-align: center;
+    font-size: 14px;
+    text-decoration: none;
+    border-radius: 3px;
+    text-shadow: 1px 1px 0px #fff;
+    display: block;
+    margin: 12px -2px 12px 0;
+    float: right;
+    padding: 6px 12px;
+    height: 36px;
+    cursor: pointer;
+    min-width: 96px;
+    width: auto;
+    background: #FBFBFB;
+    background: -moz-linear-gradient(top, #FBFBFB 0%, #EEEEEE 99%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #FBFBFB), color-stop(99%, #EEEEEE));
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr = '#FBFBFB', endColorstr = '#EEEEEE', GradientType = 0);
+    border: 1px solid #cfcfcf;
+    font-weight: bold;
+    color: #666;
+}
+
+.input-usr::before, .input-email::before  {
+    font-family: "FontAwesome";
+    position: absolute;
+    font-size: 30px;
+    padding: 10px 0 0 7px;
+    color: rgba(128, 128, 128, 0.25)
+}
+.input-usr::before{
+    content: "\f007";
+}
+.input-email::before  {
+    content: "\f1fa";
+}
+
+.input-usr:hover::before, .input-email:hover::before{
+    color: rgba(128, 128, 128, 0.9);
+    transition: all 0.3s;
+}
