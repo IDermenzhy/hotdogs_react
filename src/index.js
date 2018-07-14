@@ -10,7 +10,6 @@ import './css/font-awesome.css';
 
 const store = createStore();
 
-
 ReactDOM.render(
     <Provider store = { store }>
         <BrowserRouter>
@@ -18,12 +17,6 @@ ReactDOM.render(
                 <Route exact path = '/' component = {App} />
                 <Route exact path = '/contact' component = {Contact} />
             </div>
-
-
-
-
-        </BrowserRouter>
-
-
-
-    </Provider>, document.getElementById('root'));
+         </BrowserRouter>
+    </Provider>,
+    document.getElementById('root'));

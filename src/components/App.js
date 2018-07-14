@@ -3,18 +3,16 @@ import Header from "./Header";
 import Nav from "./Navigation";
 import Main from "./Main";
 import {connect} from "react-redux";
-import {itemsFetchData} from "../actions/ContentActions";
+import {fetchData} from "../actions/contentActions";
 import Footer from "./Footer";
 
 class App extends Component {
 
-    componentWillMount () {
+    componentDidMount () {
         this.props.fetchData();
         }
 
     render() {
-        // console.log(this.props.items, 'data');
-        // console.log(this.props, 'render');
       return (
       <div className="App">
           <div className="black-line"></div>
@@ -28,22 +26,16 @@ class App extends Component {
   }
 }
 
-
 const mapStateToProps = (state) => {
-        // console.log(state, 'mapState');
         return {
             items: state.getItems,
         };
-
-
 };
+
 const mapDispatchToProps = (dispatch) => {
     return {
-        fetchData: () => dispatch(itemsFetchData())
+        fetchData: () => dispatch(fetchData())
     };
 };
 
-
-
-
-export default connect ( mapStateToProps, mapDispatchToProps)  (App) ;
+export default connect ( mapStateToProps, mapDispatchToProps )(App) ;

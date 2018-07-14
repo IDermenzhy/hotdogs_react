@@ -24,11 +24,10 @@ class Header extends Component {
                 </div>
                 <div className="insta-tag">
                     <img src = { require ("../img/Instagram.png")} alt="alt" />
-                        <span>#hotdogs</span>
+                    <span>#hotdogs</span>
                 </div>
             </header>
         )
-
     }
 }
 

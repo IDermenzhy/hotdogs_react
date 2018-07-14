@@ -5,6 +5,7 @@ body {
     font-family: 'Open Sans', sans-serif;
 
 }
+
 .black-line {
     z-index: 1;
     position: relative;
@@ -20,6 +21,7 @@ header {
     width: 100%;
     height: auto;
 }
+
 .row {
     z-index: 0;
     display: flex;
@@ -28,6 +30,7 @@ header {
     height: auto;
 
 }
+
 .insta-tag {
     z-index: 2;
     margin-top: 12px;
@@ -37,16 +40,16 @@ header {
     align-items: center;
     color: white;
 }
+
 .insta-tag img {
     width: 20px;
     height: 20px;
 }
+
 .insta-tag span {
     font-family: 'Proxima Nova Semibold';
     font-size: 15px;
-
 }
-
 
 .header-hotdog img{
     width: 100%;
@@ -83,7 +86,6 @@ li {
 nav a{
     color: #555559;
     text-decoration: none;
-
 }
 
 main{
@@ -135,7 +137,6 @@ main{
     font-family: 'Open Sans', sans-serif;
     color: white;
     padding: 32px 25px;
-
 }
 
 .food-section {
@@ -155,6 +156,7 @@ main{
     font-weight: 700;
     font-size: 24px;
 }
+
 .food-section h2::before {
     width: 30px;
     height: 3px;
@@ -194,7 +196,6 @@ main{
     width: 66%;
 }
 
-
 @media (min-width: 787px) {
     .image-first  {
         order: 1;
@@ -205,12 +206,11 @@ main{
     .food-section {
         flex-direction: column;
     }
+
     footer{
         justify-content: center;
         flex-direction: column;
     }
-
-
 }
 
 @media (max-width: 899px) {
@@ -232,6 +232,7 @@ main{
     li {
         margin: 10px 0;
     }
+
     .info {
         justify-content: center;
         flex-direction: column;
@@ -251,6 +252,7 @@ footer {
     justify-content: space-between;
     align-items: center;
 }
+
 .all-rigts {
     padding-left: 10px ;
 }
@@ -260,9 +262,11 @@ footer {
     padding-right: 10px ;
     align-items: center;
 }
+
 .info a {
     text-decoration: none;
 }
+
 .middle-info {
     border-left: 1px solid rgba(85, 85, 89, 0.78);
     border-right: 1px solid rgba(85, 85, 89, 0.78);

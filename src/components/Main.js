@@ -4,8 +4,8 @@ import FoodSection from "./FoodSection";
 
 
 class Main extends Component {
+
     render () {
-        // console.log(this.props.items, 'main');
         return (
             <main>
                 <Intro/>

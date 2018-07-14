@@ -9,6 +9,7 @@
     border-radius: 10px;
     padding-top: 20px;
 }
+
 .input-area {
     display: flex;
     flex-wrap: nowrap;
@@ -24,10 +25,12 @@ input[type = 'username'], input[type = 'email'], textarea {
     border-radius: 4px;
     padding-left: 10px;
 }
+
 input[type = 'username'], input[type = 'email'] {
     height: 50px;
     padding-left: 40px;
 }
+
 textarea{
     height: 100px;
     width: 330px;
@@ -71,9 +74,11 @@ textarea:hover {
     padding: 10px 0 0 7px;
     color: rgba(128, 128, 128, 0.25)
 }
+
 .input-usr::before{
     content: "\f007";
 }
+
 .input-email::before  {
     content: "\f1fa";
 }
